@@ -1,0 +1,101 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  height: 100%;
+  position: relative;
+  text-shadow: 10px;
+}
+
+.snap-container::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar-top-bg {
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.navbar-bottom-bg {
+  background-color: black;
+}
+
+.snap-container,
+.snap-child {
+  height: 100%;
+  width: 100%;
+}
+
+.snap-container {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.snap-child {
+  scroll-snap-align: start;
+}
+
+.about-image {
+  height: 450px;
+}
+
+.mapouter {
+  text-align: right;
+  height: 500px;
+  width: 600px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 500px;
+  width: 600px;
+}
+
+.gmaps-iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.textbox-style {
+  width: 80%;
+}
+
+#home {
+  min-height: 100vh;
+  background: url("milktea-stock-photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#about {
+  min-height: 100vh;
+  background-image: url("pexels-min-an-792991.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#location {
+  min-height: 100vh;
+  background-image: url("store-stock-photo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#contact {
+  min-height: 100vh;
+  background-color: gray;
+}
+
+#contact-us {
+}
+
+#footer {
+  background-color: black;
+}

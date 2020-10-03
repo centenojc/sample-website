@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <title>Sample Website</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-md navbar-top-bg navbar-dark fixed-top pl-5 pr-5 pt-3 pb-3"
+    >
+      <a href="#" class="navbar-brand">LOGO HERE</a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#location" class="nav-link">Location</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="snap-container">
+      <div id="home" class="snap-child">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center text-white h-100 m-1"
+        >
+          <div class="display-1">Sample Heading</div>
+          <div class="display-4">Sample Phrase</div>
+        </div>
+      </div>
+      <div id="about" class="snap-child">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="d-flex justify-content-evenly container">
+            <img
+              src="/pexels-polina-tankilevitch-4725716.jpg"
+              alt="icecream.jpg"
+              class="about-image d-none d-lg-block d-xl-none d-xl-block"
+            />
+            <div class="pl-5 pr-5" id="about-content">
+              <div class="display-3 pt-3 pb-4" id="about-heading">
+                Sample Heading
+              </div>
+              <div class="pt-4 text-white" id="about-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                dolorum modi cupiditate. Dolore totam vitae deleniti quo,
+                aliquid earum maiores modi. Soluta, ipsa sapiente laborum
+                nesciunt ratione ullam suscipit perspiciatis fuga quam,
+                voluptatem aperiam iusto est id consequatur atque!
+                Exercitationem repudiandae labore aliquam perferendis dicta
+                velit illum illo quasi, deserunt fugiat aut assumenda enim optio
+                quae quis consectetur commodi quam quibusdam praesentium dolor
+                nobis vel? Natus, modi error porro a aut sit cumque veniam?
+                Repellat, fugiat necessitatibus doloribus, ut architecto modi ea
+                vitae ad commodi aliquam assumenda, nemo quam incidunt deserunt
+                cumque quia quis error cum accusamus aut explicabo dignissimos.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="location" class="snap-child">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="d-flex justify-content-evenly container">
+            <div class="mapouter pr-4 d-none d-lg-block d-xl-block">
+              <div class="gmap_canvas">
+                <iframe
+                  width="600"
+                  height="500"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=cabuyao&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe>
+              </div>
+            </div>
+            <div class="pl-5 text-white">
+              <div class="display-3 pb-4">We can hangout anywhere!</div>
+              <div class="display-5 pt-3">We have 50+ branches nationwide!</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="snap-child h-100">
+        <div
+          class="d-flex justify-content-center align-items-center h-75"
+          id="contact-us"
+        >
+          <div class="d-flex justify-content-between">
+            <div class="contact-left pr-5">
+              <div class="display-4 pb-5">Email us for orders!</div>
+              <div class="">
+                <p>Email:</p>
+                <input type="text" class="textbox-style" />
+                <p>Message:</p>
+                <input type="text" class="textbox-style" />
+              </div>
+            </div>
+            <div class="contact-right pl-5">
+              <div class="display-4 pb-5">Our social media sites!</div>
+              <p style="font-size: 1.5rem">
+                <a href="#"
+                  ><i class="fab fa-facebook-square"
+                    >&nbsp;https://facebook.com/example</i
+                  ></a
+                >
+              </p>
+              <p style="font-size: 1.5rem">
+                <a href="#"
+                  ><i class="fab fa-twitter-square"
+                    >&nbsp;https://twitter.com/example</i
+                  ></a
+                >
+              </p>
+              <p style="font-size: 1.5rem">
+                <a href="#"
+                  ><i class="fab fa-instagram-square"
+                    >&nbsp;https://instagram.com/example</i
+                  ></a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex justify-content-center align-items-center h-25"
+          id="footer"
+        >
+          <div class="d-flex justify-content-between"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
